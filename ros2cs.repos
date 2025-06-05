@@ -1,5 +1,5 @@
 repositories:
   src/ros2cs/:
     type: git
-    url: git@github.com:hiro-han/ros2cs.git
+    url: git@github.com:NITIC-Robot-Club/ros2cs-for-android.git
     version: feature/unity-2023
