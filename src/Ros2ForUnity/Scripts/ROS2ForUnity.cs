@@ -191,7 +191,7 @@ internal class ROS2ForUnity
             );
         }
 
-        if (IsStandalone() && !string.IsNullOrEmpty(ros2SourcedCodename)) {
+        if (IsStandalone() && !string.IsNullOrEmpty(ros2SourcedCodename) && ros2SourcedCodename != "jazzy") {
             Debug.LogError(
                 "You should not source ROS2 in 'ros2-for-unity' standalone build. " +
                 "Plugin might not work correctly."
@@ -211,7 +211,7 @@ internal class ROS2ForUnity
     /// </summary>
     private void CheckROSSupport(string ros2Codename)
     {
-        List<string> supportedVersions = new List<string>() { "foxy", "galactic", "humble", "rolling" };
+        List<string> supportedVersions = new List<string>() { "foxy", "galactic", "humble", "rolling", "jazzy" };
         var supportedVersionsString = String.Join(", ", supportedVersions);
         if (string.IsNullOrEmpty(ros2Codename))
         {

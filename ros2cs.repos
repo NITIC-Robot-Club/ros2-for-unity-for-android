@@ -1,5 +1,5 @@
 repositories:
   src/ros2cs/:
     type: git
-    url: git@github.com:NITIC-Robot-Club/ros2cs-for-android.git
-    version: jazzy
+    url: https://github.com/saku-1192/ros2cs.git
+    version: jazzy-android
